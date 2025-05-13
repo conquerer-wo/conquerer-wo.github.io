@@ -1,0 +1,169 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body, html {
+    width: 100%;
+    height: 100%;
+    font-family: sans-serif;
+  }
+  
+  /* Main Grid Layout */
+  .body {
+    display: grid;
+    width: 100vw;
+    min-height: 100vh;
+    grid-template-columns: 5fr 1fr;
+    grid-template-rows: auto auto auto auto auto auto;
+  }
+  
+  /* Header Section */
+  .q {
+    display: grid;
+    grid-template-columns: 10% 60% 15%;
+    align-items: center;
+    gap: 90px;
+    background-color: rgba(0, 2, 25, 0.2);
+    border-bottom: 3px solid black;
+    padding: 10px;
+  }
+  
+  .q h1 {
+    margin-left: 14%;
+    font-size: 35px;
+    text-align: center;
+  }
+  
+  .q img {
+    height: 100%;
+    width: 100%;
+    transition: transform 0.5s ease;
+  }
+  
+  .q img:hover {
+    transform: scale(1.3);
+  }
+  
+  /* Top Image Section */
+  .w img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 1s ease, filter 2s ease;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+  }
+  
+  .w img:hover {
+    transform: rotate(-20deg);
+    filter: grayscale(0%);
+    -webkit-filter: grayscale(0%);
+  }
+  
+  /* Bio Section */
+  .e {
+    background: linear-gradient(rgba(0, 2, 25, 0.2), blue);
+    padding: 20px;
+    border-bottom: 3px solid black;
+  }
+  
+  .e p {
+    font-size: 23px;
+    color: white;
+  }
+  
+  /* Secondary Image Section */
+  .r {
+    background: linear-gradient(rgba(0, 2, 25, 0.2), blue);
+    border-bottom: 3px solid black;
+  }
+  
+  .r img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 14%;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    transition: transform 2s ease, filter 2s ease;
+  }
+  
+  .r img:hover {
+    transform: rotate(20deg);
+    filter: grayscale(0%);
+    -webkit-filter: grayscale(0%);
+    background-color: grey;
+  }
+  
+  /* Contact Section */
+  .t {
+    text-align: center;
+    padding: 40px;
+    font-size: 20px;
+    background: linear-gradient(blue, rgba(0, 2, 25, 0.2));
+    color: white;
+  }
+  
+  /* Contributions Section */
+  .y {
+    text-align: center;
+    background: linear-gradient(blue, rgba(0, 2, 25, 0.2)); 
+    color: white;
+    padding: 20px; transition: transform 1s ease, color 1.3s
+  }
+  .y:hover{transform: rotate(-10deg); color:black; background}
+  
+  .y p {
+    font-size: 15px;
+  }
+  
+  .jj {
+    font-size: 25px;
+    margin-bottom: 10px;
+  }
+  
+  /* Global Image Style */
+  img {
+    border-radius: 14%;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Responsive Media Queries */
+  @media (max-width: 1000px) {
+    .body {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(6, auto);
+    }
+  
+    .q {
+      grid-template-columns: 1fr;
+      gap: 20px;
+      text-align: center;
+    }
+  
+    .q h1 {
+      font-size: 28px;
+      margin: 0 auto;
+    }
+  
+    .e p {
+      font-size: 18px;
+    }
+  
+    .t {
+      font-size: 18px;
+    }
+  
+    .jj {
+      font-size: 20px;
+    }
+  
+    .y p {
+      font-size: 14px;
+    }
+  }
+  
