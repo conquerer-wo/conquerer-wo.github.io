@@ -62,7 +62,7 @@
     filter: grayscale(0%);
     -webkit-filter: grayscale(0%);
   }
-.w { background-color: linear-gradient(rgba(0, 2, 25, 0.2), blue);}
+.w { background: linear-gradient(rgba(0, 2, 25, 0.2), blue); border-bottom: 3px solid black;}
   
   /* Bio Section */
   .e {
