@@ -40,7 +40,7 @@ html, body {
 .animate:nth-child(2) {transition-delay:200ms;}
 .animate:nth-child(3) {transition-delay:300ms;}
 
-.show{; filter:blur(0px); height:65.2vh; margin-bottom:0px; }
+.show{; filter:blur(0px); height:30vh; margin-bottom:0px; }
   /* Header Section */
   .q {
     display: grid;
