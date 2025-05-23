@@ -24,7 +24,7 @@ html, body {
   height: 100%;
 }
 
-.nav{ transform: translateX(-60%); color:purple; transition: transform 0.5s ease,color 2s ease;}
+.nav{ transform: translateX(-60%); color:purple; transition: transform 2s ease,color 2s ease;}
 .na{transform: translateX(0%); color:white;}
   
   /* Main Grid Layout */
@@ -101,7 +101,7 @@ html, body {
   font-size: 28px;
 
   /* Gradient color */
-  background: linear-gradient(to right, white, blue);
+  background: linear-gradient(to right, grey, white);
   background-clip: text;
   -webkit-background-clip: text;
 
