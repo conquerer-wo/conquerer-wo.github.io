@@ -112,7 +112,7 @@ html, body {
   -webkit-text-fill-color: transparent;
 
  
-  display: inline-block; 
+  display: block; 
   white-space: normal;
   word-break: break-word;
   overflow-wrap: break-word;
@@ -120,7 +120,7 @@ html, body {
   
   /* Secondary Image Section */
   .r {
-    blue);
+   
     border-bottom: 3px solid black;
   }
   
