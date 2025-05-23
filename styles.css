@@ -91,17 +91,14 @@ html, body {
 
   
   /* Bio Section */
-  .e {display: flex;
-  flex-direction: column;
+  .e {
   padding: 20px;
   border-bottom: 3px solid black;
   background: linear-gradient(black, white);
-  min-height: 0;
+  
   }
   
   .e p {
-     flex-grow: 1;
-  overflow-y: auto;
   font-size: 28px;
     
   }
