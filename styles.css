@@ -95,13 +95,25 @@ html, body {
   padding: 20px;
   border-bottom: 3px solid black;
   background: linear-gradient(black, white);
-  
-  }
-  
-  .e p {
+}
+
+.e p {
   font-size: 28px;
-    
-  }
+
+  /* Gradient color */
+  background: linear-gradient(to right, white, blue);
+  background-clip: text;
+  -webkit-background-clip: text;
+
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+
+ 
+  display: inline; 
+  white-space: normal;
+  word-break: break-word;
+  overflow-wrap: break-word;
+}
   
   /* Secondary Image Section */
   .r {
