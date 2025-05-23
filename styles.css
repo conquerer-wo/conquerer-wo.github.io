@@ -9,13 +9,13 @@
     width: 100%;
     height: 100%;
     font-family: sans-serif;
-    background-color:grey; }
+    background-color:grey;
     body {
   font-family: 'Merriweather', serif;
  
   line-height: 1.6;
   
-
+}
 
   }
 html, body {
@@ -95,19 +95,21 @@ html, body {
   padding: 20px;
   border-bottom: 3px solid black;
   background: linear-gradient(black, white);
-    display:flex;
-      flex-direction: column;   min-height: 0; 
 }
 
 .e p {
   font-size: 28px;
-    flex-grow: 1;
 
   /* Gradient color */
- 
+  background: linear-gradient(to right, grey, white);
+  background-clip: text;
+  -webkit-background-clip: text;
+
+  color: transparent;
+  -webkit-text-fill-color: transparent;
 
  
-  display: inline-flex; 
+  display: inline; 
   white-space: normal;
   word-break: break-word;
   overflow-wrap: break-word;
@@ -115,7 +117,7 @@ html, body {
   
   /* Secondary Image Section */
   .r {
-   
+    blue);
     border-bottom: 3px solid black;
   }
   
