@@ -112,7 +112,7 @@ html, body {
   -webkit-text-fill-color: transparent;
 
  
-  display: inline; 
+  display: block; 
   white-space: normal;
   word-break: break-word;
   overflow-wrap: break-word;
