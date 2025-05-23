@@ -104,15 +104,10 @@ html, body {
     flex-grow: 1;
 
   /* Gradient color */
-  background: linear-gradient(to right, grey, white);
-  background-clip: text;
-  -webkit-background-clip: text;
-
-  color: transparent;
-  -webkit-text-fill-color: transparent;
+ 
 
  
-  display: block; 
+  display: inline; 
   white-space: normal;
   word-break: break-word;
   overflow-wrap: break-word;
