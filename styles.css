@@ -16,6 +16,7 @@
   line-height: 1.6;
   
 }
+    .none{display: none;}
 
   }
 html, body {
@@ -23,10 +24,10 @@ html, body {
   padding: 0;
   height: 100%;
 }
-
+.navg{border:2px solid red; height:20px;width:85vw; transition: 2s ease;}
 .nav{ transform: translateX(-60%); color:purple; transition: transform 2s ease,color 2s ease;}
 .na{transform: translateX(0%); color:white;}
-  
+.one{display:none; transition:1s;}
   /* Main Grid Layout */
   .body {
     display: grid;
