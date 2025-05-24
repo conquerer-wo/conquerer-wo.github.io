@@ -1,17 +1,26 @@
-// First observer
+ // First observer
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
       entry.target.classList.add('show');
+      entry.target.classList.add('fade-out');
 
       // Add 'one' after 4400ms
       setTimeout(() => {
         entry.target.classList.add('one');
 
-        // Once 'one' is added, remove 'none'
+        // Once 'one' is added, remove 'none' 
+        const heading = document.querySelector('.navg .none')
         if (entry.target.classList.contains('one')) {
-          entry.target.classList.remove('none', 'animate');
-          entry.target.classList.add('navg')
+          entry.target.classList.remove('animate', 'fade-out','none'); 
+        if(heading && heading.classList.contains('none')) {heading.classList.remove('none');}
+          
+          
+          entry.target.classList.add('navg');
+          
+          
+         
+           observer.unobserve(entry.target); 
         }
       }, 4400);
     }
