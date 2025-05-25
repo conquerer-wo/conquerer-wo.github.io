@@ -41,7 +41,7 @@ html, body {
   opacity: 0;
   transition: opacity 4.4s ease;
 }
-.replacement{height:25vh; position:sticky;z-index:999;}
+.replacement{height:10vh; position:sticky;z-index:999;}
 .animate{; transition:5s ease; filter:blur(0px); height:100vh;}
 .animate:nth-child(1) {transition-delay:100ms;}
 .animate:nth-child(2) {transition-delay:200ms;}
