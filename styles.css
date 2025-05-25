@@ -15,7 +15,7 @@
   line-height: 1.6;}
     .none {
   display:none;}
-.replacement img {height:90px;} 
+
 .replacement:hover {background: linear-gradient(to right, black,blue ); color:gold;}
   
 html, body {
@@ -44,7 +44,7 @@ html, body {
 }
 .replacement {
   border: 2px solid red;
-  position: sticky;
+  position: static;
   top: 0;
   z-index: 999;
   height: 10vh;
