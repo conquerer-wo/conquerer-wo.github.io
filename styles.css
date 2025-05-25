@@ -15,7 +15,7 @@
   line-height: 1.6;}
     .none {
   display:none;}
-
+.replacement img {height:90px;} 
 .replacement:hover {background: linear-gradient(to right, black,blue ); color:gold;}
   
 html, body {
@@ -25,8 +25,7 @@ html, body {
 } 
 
 
-.navg{border:2px solid red; height:20vh;width:85vw; transition: opacity 2s ease; margin-bottom:20px; position:sticky; z-index:999;top: 0; opacity:1; transition: opacity 1s ease; }
-.navg h1{color:gold;}
+
 .nav{ transform: translateX(-60%); color:purple; transition: transform 2s ease,color 2s ease;}
 .na{transform: translateX(0%); color:white;}
 .one{display:none;transition:1s;}
@@ -44,10 +43,10 @@ html, body {
 }
 .replacement {
   border: 2px solid red;
-  position: static;
+  position: sticky;
   top: 0;
   z-index: 999;
-  height: 10vh;
+  height: 25vh;
   overflow: hidden;
   box-sizing: border-box;
 
