@@ -1,39 +1,51 @@
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach((entry) => {
-    if (entry.isIntersecting) {
-      // If it's an h1.animate, remove it
-      if (entry.target.tagName.toLowerCase() === 'h1') {
-        entry.target.remove();
-        observer.unobserve(entry.target);
-        return;
-      }
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sabri Tairov</title>
+    <link href="./styles.css" type="text/css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
 
-      entry.target.classList.add('show', 'fade-out');
+  </head>
 
-      setTimeout(() => {
-        entry.target.classList.add('one');
+  <body>
+   <div class="body">
+     <div class="q animate">
+       
+       <div class="animate"><a target="_blank" href="https://www.faeuro.com/u14mlsnextroster"><img src="https://upload.wikimedia.org/wikipedia/en/0/06/FA_Euro_logo.svg"/> </a></div>
+       <h1 class="animate">A once in a generation football talent </h1>
+       <div class="animate"><a target="_blank" href="https://www.mlssoccer.com/mlsnext/"><img src="https://images.mlssoccer.com/image/upload/v1664742553/assets/logos/mls-next-2022-COLOR-800x800.png"/> </a>
+       </div>
+     </div>
+      <div class="w">
+        <img class="yu animate"src="https://i.imgur.com/8PASTJq.jpeg"/>
+        
+     </div>
+      <div class="e nav">
+        <p>Sabri Tairov is a dynamic 14-year-old striker whose exceptional physical attributes and natural goal-scoring instincts have earned him a coveted spot at FA Euro, one of the premier development academies in the country. Standing out for his explosive speed, impressive strength, and relentless work ethic, Sabri consistently outmatches defenders with both his athleticism and tactical intelligence. His powerful shot, elegant dribbling, fearless attacking style, and unmatched physicality make him a constant threat in and outside of the box, leaving coaches doubting his age. With a mature understanding of the game beyond his years, he hopes to one day become the greatest footballer of all time, overall Sabri is a standout prospect poised to make a serious impact at the next level. It is to be noted that he has gained all this skill in only one year, showing how talented he truly is.
+</p>
+      
+     </div>
+      <div class="r nav">
+        <img class="king"src="https://i.ibb.co/7xLxSrWg/Snapchat-1257447944.jpg" />
+     </div>
+      <div class="t">
+        <h1>Contact info</h1>
+        <p>📞929-428-3042</p>
+        <p>📸 @sabritairov.2011</p>
+        </div>
+         <div class="y">
+           <h1 class="jj">Contributions:</h1>
+           <p>Sabri Tairov: for providing the adequate info and pictures</p>
+           <p> Ethan Deng: for providing the top right picture of Sabri</p>
+           <p>All the fine gentlemen in 822: for offering their unwavering support and creative suggestions</p>
+     </div>
+     </div>
+     <script src="app.js"></script>
+          
+     </body>
+ 
 
-        if (entry.target.classList.contains('one')) {
-          entry.target.classList.remove('fade-out');
-
-          // Create replacement div
-          const replacement = document.createElement('div');
-          replacement.className = 'replacement';
-          replacement.innerHTML = `
-            <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; align-items: center; gap: 90px;">
-              <img src="https://upload.wikimedia.org/wikipedia/en/0/06/FA_Euro_logo.svg" style="width: 100px;">
-              <h1>FUTURE LEGEND</h1>
-              <img style="margin-left:90px" class="p" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/MLS_Next_logo.svg/1200px-MLS_Next_logo.svg.png" style="width: 100px;">
-            </div>
-          `;
-
-          entry.target.replaceWith(replacement);
-          observer.unobserve(entry.target);
-        }
-      }, 4400);
-    }
-  });
-}, { threshold: 0 });
-
-const elements = document.querySelectorAll('.animate');
-elements.forEach(element => observer.observe(element));
+</html>
