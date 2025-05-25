@@ -1,32 +1,40 @@
- // First observer
+// First observer
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
-      entry.target.classList.add('show');
-      entry.target.classList.add('fade-out');
+      entry.target.classList.add('show', 'fade-out');
 
-      // Add 'one' after 4400ms
       setTimeout(() => {
         entry.target.classList.add('one');
 
-        // Once 'one' is added, remove 'none' 
-        const heading = document.querySelector('.navg .none')
         if (entry.target.classList.contains('one')) {
-          entry.target.classList.remove('animate', 'fade-out','none'); 
-        if(heading && heading.classList.contains('none')) {heading.classList.remove('none');}
-          
-          
-          entry.target.classList.add('navg');
-          
-          
-         
-           observer.unobserve(entry.target); 
+          entry.target.classList.remove('fade-out');
+
+          // Create a replacement element
+          const replacement = document.createElement('div');
+          replacement.className = 'replacement';
+          replacement.innerHTML = `
+            <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; align-items: center; gap: 90px;">
+              <img src="https://upload.wikimedia.org/wikipedia/en/0/06/FA_Euro_logo.svg" style="width: 100px;">
+              <h1>FUTURE LEGEND</h1>
+              <img style="margin-left:90px" class="p" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/MLS_Next_logo.svg/1200px-MLS_Next_logo.svg.png" style="width: 100px;">
+            </div>
+          `;
+
+          // Replace the old .animate element with the new replacement
+          entry.target.replaceWith(replacement);
+
+          // Now select the element with class "p" inside the replacement and apply style
+        
+
+          observer.unobserve(entry.target);
         }
       }, 4400);
     }
   });
 }, { threshold: 0 });
 
+// Observe all .animate elements
 const elements = document.querySelectorAll('.animate');
 elements.forEach(element => observer.observe(element));
 
@@ -39,5 +47,6 @@ const observer1 = new IntersectionObserver((entries) => {
   });
 }, { threshold: 0.15 });
 
+// Observe all .nav elements
 const nav = document.querySelectorAll('.nav');
 nav.forEach(element => observer1.observe(element));
