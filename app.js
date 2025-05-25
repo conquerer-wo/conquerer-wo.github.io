@@ -7,13 +7,15 @@ const observer = new IntersectionObserver((entries) => {
         // Create the replacement
         const replacement = document.createElement('div');
         replacement.className = 'replacement';
-        replacement.innerHTML = `
-          <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; align-items: center; gap: 90px;">
-            <img src="https://upload.wikimedia.org/wikipedia/en/0/06/FA_Euro_logo.svg" style="width: 100px; height:90px;">
-            <h1>FUTURE LEGEND</h1>
-            <img class="p" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/MLS_Next_logo.svg/1200px-MLS_Next_logo.svg.png" style="width: 100px; height:90px;">
-          </div>
-        `;
+       
+          replacement.innerHTML = `
+  <div style="height: 100%; display: grid; grid-template-columns: 1fr 1fr 1fr; align-items: center; gap: 90px;">
+    <img src="..." style="width: 100px; height:90px; margin-bottom:100px;">
+    <h1 style="margin-left:100px; margin-bottom:90px;">FUTURE LEGEND</h1>
+    <img class="p" src="..." style="width: 100px; height:90px; margin-left:240px; margin-bottom:100px;">
+  </div>
+`;
+
 
         // Replace the entire .q section
         entry.target.replaceWith(replacement);
