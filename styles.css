@@ -16,6 +16,7 @@
     .none {
   display:none;}
 .replacement img {height:90px;} 
+.replacement:hover {background: linear-gradient(to right, black,blue ); color:gold;}
   
 html, body {
   margin: 0;
@@ -41,7 +42,17 @@ html, body {
   opacity: 0;
   transition: opacity 4.4s ease;
 }
-.replacement{height:10vh; position:sticky;z-index:999;}
+.replacement {
+  border: 2px solid red;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  height: 25vh;
+  overflow: hidden;
+  box-sizing: border-box;
+
+ transition: color 2s ease; }
+.e {margin-bottom:0px;}
 .animate{; transition:5s ease; filter:blur(0px); height:100vh;}
 .animate:nth-child(1) {transition-delay:100ms;}
 .animate:nth-child(2) {transition-delay:200ms;}
